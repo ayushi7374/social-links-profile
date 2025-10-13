@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+}
+.card-layout {
+  background-color: hsl(0, 0%, 12%);
+  text-align: center;
+}
