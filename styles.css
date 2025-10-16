@@ -1,11 +1,60 @@
+:root {
+  --primary-text-color: hsl(0, 0%, 100%);
+  --yellow-color: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: hsl(0, 0%, 8%);
+  background-color: var(--grey-900);
+  font-family: "Outfit";
 }
 .card-layout {
-  background-color: hsl(0, 0%, 12%);
+  background-color: var(--grey-800);
   text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+}
+.card-layout > img {
+  height: 70x;
+  width: 70px;
+  border-radius: 50%;
+}
+.card-layout > h1 {
+  font-size: 22px;
+  color: var(--primary-text-color);
+  font-weight: 400;
+}
+.card-layout > h2 {
+  font-size: 13px;
+  color: var(--yellow-color);
+  font-weight: 400;
+}
+.card-layout > h3 {
+  font-size: 10px;
+  color: var(--primary-text-color);
+  font-weight: 300;
+}
+.card-layout > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+  background-color: var(--grey-700);
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px 30px 10px 30px;
+  transition: background-color color font-weight;
+}
+.card-layout > p:hover {
+  background-color: var(--yellow-color);
+  color: var(--grey-800);
+  cursor: pointer;
+  caret-color: var(--grey-900);
+  font-weight: 600;
 }
